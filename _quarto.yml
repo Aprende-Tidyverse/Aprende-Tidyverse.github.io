@@ -1,0 +1,18 @@
+project:
+  type: website
+  render: 
+    - "*.qmd"
+  output-dir: docs
+  preview:
+    port: 4200
+
+website:
+  navbar:
+    left:
+      - text: "Inicio"
+        file: index.qmd
+
+
+format:
+  html:
+    include-after-body: plausible.html
