@@ -1,0 +1,7 @@
+---
+title: "Introducción a las expresiones regulares en R"
+description: "Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional."
+date: 2025-05-08
+categories: ['regex','stringr']
+lang: "es"
+---

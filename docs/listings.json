@@ -1,0 +1,64 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/dplyr/across-funciones-multiples-columnas.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-1.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-2.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-3.html",
+      "/posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html",
+      "/posts/ggplot2/ggplot2-agregar-texto-graficos.html",
+      "/posts/ggplot2/ggplot2-anotaciones-informativas.html",
+      "/posts/ggplot2/ggplot2-grafico-barras.html",
+      "/posts/ggplot2/ggplot2-lineas.html",
+      "/posts/ggplot2/ggplot2-manipular-escalas.html",
+      "/posts/ggplot2/ggplot2-personalizar-colores.html",
+      "/posts/ggplot2/ggplot2-series-tiempo.html",
+      "/posts/ggplot2/ggplot2-temas-personalizar-aspecto.html",
+      "/posts/ggplot2/introduccion-ggplot2-fundamentos.html",
+      "/posts/stringr/grupos-retroreferencias-lookaround-r-3.html",
+      "/posts/stringr/introduccion-expresiones-regulares-r-1.html",
+      "/posts/stringr/manipulacion-textos-stringr.html",
+      "/posts/stringr/metacaracteres-cuantificadores-regex-r-2.html"
+    ]
+  },
+  {
+    "listing": "/index2.html",
+    "items": [
+      "/posts/003_descargar_delitos_costarica.html",
+      "/posts/002_custom_legend_ggplot2.html",
+      "/posts/001_mapa_cantones_cr.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/dplyr/across-funciones-multiples-columnas.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-1.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-2.html",
+      "/posts/dplyr/introduccion-paquete-dplyr-parte-3.html",
+      "/posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html",
+      "/posts/ggplot2/ggplot2-agregar-texto-graficos.html",
+      "/posts/ggplot2/ggplot2-anotaciones-informativas.html",
+      "/posts/ggplot2/ggplot2-grafico-barras.html",
+      "/posts/ggplot2/ggplot2-lineas.html",
+      "/posts/ggplot2/ggplot2-manipular-escalas.html",
+      "/posts/ggplot2/ggplot2-personalizar-colores.html",
+      "/posts/ggplot2/ggplot2-series-tiempo.html",
+      "/posts/ggplot2/ggplot2-temas-personalizar-aspecto.html",
+      "/posts/ggplot2/introduccion-ggplot2-fundamentos.html",
+      "/posts/stringr/grupos-retroreferencias-lookaround-r-3.html",
+      "/posts/stringr/introduccion-expresiones-regulares-r-1.html",
+      "/posts/stringr/manipulacion-textos-stringr.html",
+      "/posts/stringr/metacaracteres-cuantificadores-regex-r-2.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/dataset_delitos.html",
+      "/projects/monitor_noticias.html",
+      "/projects/precios_supermercados.html"
+    ]
+  }
+]

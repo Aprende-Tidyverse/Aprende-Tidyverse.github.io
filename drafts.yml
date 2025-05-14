@@ -1,0 +1,4 @@
+website:
+  drafts:
+    - posts/dplyr/introduccion-paquete-dplyr-parte-1.qmd
+  draft-mode: visible

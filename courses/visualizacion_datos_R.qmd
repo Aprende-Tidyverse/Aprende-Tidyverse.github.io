@@ -1,0 +1,187 @@
+---
+title: "Visualización de datos con R"
+subtitle: ""
+description: "Aprenda a presentar sus datos como un profesional con R. En este curso práctico de 6 semanas, aprenderá a crear gráficos efectivos, mapas y cuadros estadísticos atractivos."
+toc: true
+lang: "es"
+author: ""
+pagetitle: "Visualización de datos con R"
+image: ../images/ggplot2_v2.jpg
+---
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Visualización de datos con R">
+<meta property="og:description" content="Aprenda a presentar sus datos como un profesional con ggplot2 y R. En este curso práctico de 6 semanas, aprenderá a crear gráficos efectivos, mapas y cuadros estadísticos atractivos.">
+<meta property="og:image" content="https://aprendetidyverse.com/images/ggplot2_v2.jpg">
+<meta property="og:url" content="https://aprendetidyverse.com/courses/visualizacion_datos_R.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card Tags (opcional pero recomendado) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Visualización de datos con ggplot2">
+<meta name="twitter:description" content="Aprenda a presentar sus datos como un profesional con ggplot2 y R. En este curso práctico de 6 semanas, aprenderá a crear gráficos efectivos, mapas y cuadros estadísticos atractivos.">
+<meta name="twitter:image" content="https://aprendetidyverse.com/images/ggplot2_v2.jpg">
+
+
+![Foto de <a href="https://unsplash.com/es/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> en <a href="https://unsplash.com/es/fotos/texto-XrIfY_4cK1w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](../images/ggplot2_v2.jpg)
+
+
+En este curso de 6 semanas, se sumergirá en el mundo de la visualización de datos utilizando R. Aprenderá desde los fundamentos hasta técnicas avanzadas, incluyendo la creación de gráficos y el manejo de datos geoespaciales para elaborar mapas. <mark>Al finalizar, será capaz de crear visualizaciones efectivas y atractivas que comuniquen sus datos de manera clara y convincente.</mark>
+
+<details open>
+  <summary>Semana 1: Fundamentos de visualización de datos con ggplot2</summary>
+  <ul>
+    <li>Entender la estructura de un gráfico con ggplot2</li>
+    <li>Crear gráficos esenciales (barras, puntos, líneas, texto)</li>
+    <li>Aplicar correctamente títulos, subtítulos y etiquetas usando <code>labs()</code></li>
+    <li>Redactar títulos, subtítulos, captions, y agregar notas y fuentes</li>
+    <li>Uso del color, tamaños y formas para codificar información</li>
+    <li>Modificar la apariencia general del gráfico</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Semana 2: Escalas, temas y paletas</summary>
+  <ul>
+    <li>Entender qué son las escalas en ggplot2</li>
+    <li>Aplicar escalas para variables continuas, discretas y fechas</li>
+    <li>Formateo de fechas <code>POSIXlt</code></li>
+    <li>Consejos para facilitar la lectura de cifras pequeñas y fechas</li>
+    <li>Ajustes horizontal y vertical de textos</li>
+    <li>Posición de elementos: <code>position_fill</code>, <code>position_dodge</code>, etc.</li>
+    <li>Uso de facetas</li>
+    <li>Paquetes: ggforce, scales, ggtext, ggview, ggokabeito, ggrepel</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Semana 3: Stats, variables computadas y técnicas avanzadas en ggplot2</summary>
+  <ul>
+    <li>Uso avanzado de estadísticas y variables computadas para transformar datos en tiempo real en ggplot2</li>
+    <li>Aplicación de funciones como <code>after_stat()</code> y <code>after_scale()</code> para realizar cálculos y ajustes estéticos dinámicos</li>
+    <li>Empleo de <code>stat_summary()</code> y <code>stat_smooth()</code> para agregar resúmenes estadísticos y líneas de tendencia en gráficos complejos</li>
+    <li>Implementación de técnicas avanzadas de anotación y etiquetado para destacar puntos críticos y valores atípicos</li>
+    <li>Uso de <code>geom_text_repel()</code> y <code>geom_label_repel()</code> del paquete <code>ggrepel</code> para mejorar la legibilidad en conjuntos de datos densos</li>
+    <li>Integración del paquete <code>ggforce</code> para crear facetas anidadas y composiciones de gráficos sofisticadas</li>
+    <li>Incorporación de paquetes complementarios como <code>ggdist</code> para visualizar distribuciones y <code>gghighlight</code> para resaltar subconjuntos relevantes</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Semana 4: Visualización geoespacial en R</summary>
+  <ul>
+    <li>Descargar datos del IGN</li>
+    <li>Leer y comprender la estructura de un dataset <code>sf</code></li>
+    <li>Realizar uniones entre tablas y aplicar consejos para realizarlas</li>
+    <li>Crear mapas coropléticos</li>
+    <li>Crear mapas de calor</li>
+    <li>Crear mapas de cartograma</li>
+    <li>Crear mapas alternativos con hexágonos o cuadrados</li>
+    <li>Aplicar anotaciones para mapas</li>
+    <li>Operaciones básicas con datos geoespaciales: recortar, unir, buffer</li>
+  </ul>
+  <p><strong>Paquetes:</strong> <code>sf</code>, <code>ggmagnify</code>, <code>rcartocolor</code></p>
+</details>
+
+<details>
+  <summary>Semana 5: Data storytelling y buenas prácticas</summary>
+  <ul>
+    <li>Fundamentos de Percepción Visual y Diseño</li>
+    <li>Patrones Narrativos y selección de gráficos</li>
+    <li>Teoría del Color: Tono, Saturación y Brillo</li>
+    <li>Jerarquía Visual y Contraste</li>
+    <li>Tipografía: tipos, familias, variables tipográficas y tipografías monoespaciadas</li>
+    <li>Formatos y Especificaciones Técnicas en Imágenes</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Semana 6: Cuadros estadísticos con gt</summary>
+  <ul>
+    <li>Introducción al paquete <code>gt</code></li>
+    <li>Diseño avanzado y personalización de tablas estadísticas</li>
+    <li>Sistema de anotaciones, fuentes y múltiples fuentes en una tabla</li>
+    <li>Buenas prácticas siguiendo estándares de presentación profesional</li>
+  </ul>
+</details>
+
+
+:::: {.columns}
+
+::: {.column width="45%"}
+## Inscríbete Ahora
++ Próxima apertura:
+    + **{{< var curso_ggplot2.fecha >}}**
+    + 6:00 p.m. a 7:30 p.m. Costa Rica
++ Duración: 6 semanas
++ Clases en vivo
++ **Precio: $99 USD**
+
+<a href='{{< var curso_ggplot2.url_pago >}}' style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Ahora</a>
+
+:::
+
+::: {.column width="50%"}
+
+![Foto de <a href="https://unsplash.com/es/@arlington_research?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arlington Research</a> en <a href="https://unsplash.com/es/fotos/personas-desconocidas-que-usan-la-computadora-en-interiores-nFLmPAf9dVc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](../images/prof_v2.jpg)
+
+:::
+::::
+
+## Conoce al instructor
+
+Hola 👋🏼, soy [Carlos Aguero](https://www.linkedin.com/in/carlos-aguero-cr). Ingeniero en sistemas de información y, desde 2016, me dedico a enseñar a personas de todas las áreas y niveles de formación a programar en R 👨🏻‍💻.
+
+Formo parte del listado de [instructores certificados por RStudio](https://education.rstudio.com/trainers/), enfocándome en **Tidyverse** y **Shiny**. Recientemente, tuve el gusto de unirme a los instructores de la organización [Software Carpentry](https://www.software-carpentry.org) 🚀.
+
+A lo largo de los años, he tenido el privilegio de ayudar a más de 400 estudiantes en toda América Latina a descubrir el potencial del análisis de datos con R. Mi objetivo es ofrecerte una guía cercana y personalizada, similar a tener un instructor privado. Estoy aquí para asegurarte que tengas una experiencia de aprendizaje accesible y efectiva, ayudándote a superar cualquier obstáculo en tu camino hacia la dominio del lenguaje R para la ciencia de datos.
+
+---
+
+## Conoce lo que dicen nuestros estudiantes
+
+```{=html}
+<script src="https://widget.senja.io/widget/fb06a6ac-2804-4eba-b249-8138840eae25/platform.js" type="text/javascript" async></script>
+<div class="senja-embed" data-id="fb06a6ac-2804-4eba-b249-8138840eae25" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
+```
+
+
+---
+
+:::: {.columns}
+No esperes más. ¡Inscríbete ahora y empieza tu camino hacia el dominio del lenguaje R! Recibe el soporte que necesitas para triunfar desde el primer día.
+
+::: {.column width="45%"}
+## Inscríbete Ahora
+
++ Inicio de lecciones:  **{{< var curso_ggplot2.fecha >}}**
++ Clases en vivo
++ Grabaciones de las clases
++ Sesiones de seguimiento personalizadas
++ Acceso a una comunidad de aprendizaje
++ Ayuda en minutos a través de Zoom o WhatsApp
++ Certificado compatible con LinkedIn emitido por Certifier
++ **Precio: $99 USD**
+
+<a href='{{< var curso_ggplot2.url_pago >}}' style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Ahora</a>
+
+:::
+
+::: {.column width="50%"}
+
+![Foto de <a href="https://unsplash.com/es/@arlington_research?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arlington Research</a> en <a href="https://unsplash.com/es/fotos/man-sitting-in-front-of-table-Kz8nHVg_tGI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](../images/prof_v3.jpg)
+
+:::
+::::
+
+
+
+## Ponte en contacto
+
+La comunidad de usuarios de R me ha permitido conectar con personas interesantes de todo el mundo, algo que valoro enormemente. Si tienes una idea de proyecto, especialmente si está relacionado con datos de Costa Rica, me encantaría ayudarte en lo que sea posible. 
+
+
+Para charlar o preguntar, escríbeme a <a href="mailto:carlos.aguero@aprendetidyverse.com">carlos.aguero@aprendetidyverse.com</a>. También puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/carlos-aguero-cr) o en [Twitter](https://twitter.com/dev_aguero) (sí, sé que ahora se llama X, pero me resisto a cambiarle el nombre; simplemente no me gusta). ¡Espero tu mensaje!
+
+
