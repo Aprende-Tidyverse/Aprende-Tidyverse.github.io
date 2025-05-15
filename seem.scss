@@ -1,26 +1,6 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500;700&display=swap');
-
-/*-- scss:defaults --*/
-
-/* Tamaño base y tipografías */
-$font-size-root:        18px !default;                       // Base para móvil
-$font-family-sans-serif: 'Lora', serif !default;             // Cuerpo
-$font-family-monospace: 'Fira Code', monospace !default;     // Código
 
 /*-- scss:rules --*/
 
-/* 1. Fluidez de la tipografía */
-html {
-  font-size: fluid-font-size(18px, 22px);
-}
-
-/* 2. Cuerpo de texto */
-body {
-  font-family: $font-family-sans-serif;
-  line-height: 1.6;
-  color: $body-color;
-}
 
 
 
@@ -29,13 +9,13 @@ body {
   background-color: #fff !important;
 }
 .navbar-logo {
-  max-height: 60px;
+  max-height: 50px;
   width: auto;
   padding-right: 0.5rem;
   margin-right: 0.5rem;
 }
 .navbar-brand {
-  font-size: fluid-font-size(20px, 24px);
+  font-size: fluid-font-size(16px, 24px);
   font-weight: 700;
 }
 .navbar-nav .nav-link {
@@ -52,48 +32,8 @@ body {
   font-weight: 700;
 }
 
-/* 6. Listado de posts */
-.quarto-listing-default {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-.quarto-listing-default > .quarto-post {
-  display: flex;
-  flex-direction: column !important;
-  width: 100%;
-}
-.quarto-post .thumbnail,
-.quarto-post .body {
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-}
-.listing-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: fluid-font-size(16px, 20px);
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.listing-subtitle,
-.listing-description {
-  line-height: 1.2;
-}
 
 
-/* 7. Anuncio “Curso Gratis” estilo minimalista */
-#quarto-announcement {
-  background-color: #ffffff;
-  border: 1px solid #eaecef;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  margin: 1rem auto;
-  
+div.quarto-post{
+  border-bottom: none;
 }
-

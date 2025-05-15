@@ -4,13 +4,14 @@ toc: true
 listing:
   page-size: 6
   contents: [posts]
-  categories: true
+  categories: false
   sort: "date desc"
   fields: [date, title, image, description, categories]
   feed: true
   filter-ui: true
   sort-ui: false
   date-format: YYYY-MM-DD
+page-layout: full
 author: ""
 pagetitle: Aprende Tidyverse
 copyright: ""
