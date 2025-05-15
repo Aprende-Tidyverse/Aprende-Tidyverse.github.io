@@ -11,12 +11,14 @@ website:
   announcement: 
     content: "**Curso Gratis** - Fundamentos de R y RStudio, inicio de clases 13 de junio [¡Matricúlate aquí!]()" 
     position: below-navbar
-    type: warning
+    type: light
     icon: gift
   page-footer:
     left: |
       Todo el contenido está licenciado bajo una licencia ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es)).
     right: 
+      - icon: rss
+        href: https://aprendetidyverse.com/index.xml
       - icon: twitter
         href: https://twitter.com/dev_aguero
       - icon: instagram
@@ -39,7 +41,7 @@ website:
     logo-alt: ""
     title: false
     background: white
-    left:
+    right:
       - text: "Blog"
         file: index.qmd
       - text: "Cursos"
@@ -51,9 +53,6 @@ website:
         file: projects.qmd
       - text: TILs
         file: posts.qmd
-    right: 
-      - icon: rss
-        href: https://aprendetidyverse.com/index.xml
   site-url: https://aprendetidyverse.com
 
 
