@@ -41,10 +41,7 @@ website:
       - text: "Blog"
         file: posts.qmd
       - text: "Cursos"
-        menu:
-          - text: "Fundamentos de R y Rstudio **(gratis)**"
-            icon: "bi-laptop"
-            href: courses/fundamentos_R.qmd
+        file: courses/index.qmd
   site-url: https://aprendetidyverse.com
 
 
