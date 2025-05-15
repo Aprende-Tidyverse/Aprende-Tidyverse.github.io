@@ -1,6 +1,7 @@
 ---
-title: "Aprende programación en R desde cero"
-subtitle: "¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse."
+title: "Fundamentos de R y RStudio"
+subtitle: ""
+description: "Este curso de 6 semanas está diseñado especialmente para principiantes que desean adentrarse en el mundo del análisis de datos utilizando R y RStudio."
 toc: false
 lang: "es"
 author: ""
@@ -22,7 +23,7 @@ pagetitle: "Fundamentos de R y Rstudio"
 <meta name="twitter:image" content="https://aprendetidyverse.com/img/community3_og.jpg">
 
 
-![Foto de <a href="https://unsplash.com/es/@cwmonty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Chris Montgomery</a> en <a href="https://unsplash.com/es/fotos/macbook-pro-displaying-group-of-people-smgTvepind4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](../img/community3_og.jpg)
+![](../img/community3_og.jpg)
 
 ## Lo que Aprenderás
 
@@ -56,11 +57,18 @@ pagetitle: "Fundamentos de R y Rstudio"
 <p>Con <code>Quarto</code>, aprenderás a combinar tu análisis con narrativas en reportes dinámicos, haciendo que tus hallazgos no solo sean comprensibles, sino también atractivos para tu audiencia. Es la habilidad de contar una historia cautivadora, donde los datos son los personajes principales.</p>
 </details>
 
+## Proxima apartura 
+
++ Jueves 13 de junio 2025
++ 6:00 p.m. (Costa Rica)
++ Duración: 6 semanas
++ Clases en vivo
 
 <a href='' style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Gratis</a>
 
 
 ## Conoce lo que dicen nuestros estudiantes
+
 
 ```{=html}
 <script src="https://widget.senja.io/widget/fb06a6ac-2804-4eba-b249-8138840eae25/platform.js" type="text/javascript" async></script>
