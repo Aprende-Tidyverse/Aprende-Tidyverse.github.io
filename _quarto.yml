@@ -7,15 +7,9 @@ project:
     port: 4200
 
 website:
-  search: false
-  announcement: 
-    content: "**Curso Gratis** - Fundamentos de R y RStudio, inicio de clases 13 de junio [¡Matricúlate aquí!]()" 
-    position: below-navbar
-    type: light
-    icon: gift
   page-footer:
     left: |
-      Todo el contenido está licenciado bajo una licencia ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es)).
+      Todo el contenido está licenciado bajo ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es)).
     right: 
       - icon: rss
         href: https://aprendetidyverse.com/index.xml
@@ -27,7 +21,6 @@ website:
         href: https://www.facebook.com/aprende.tidyverse
       - icon: linkedin
         href: https://www.linkedin.com/in/carlos-aguero-cr/
-  bread-crumbs: true
   open-graph:
     locale: es_ES
     site-name: aprendetidyverse.com
@@ -37,37 +30,31 @@ website:
   title: "Aprende Tidyverse"
   favicon: favicon.ico
   navbar:
-    logo: images/logo.png
+    fixed: true
+    logo: img/logo.png
     logo-alt: ""
     title: false
     background: white
     right:
-      - text: "Blog"
+      - text: "Inicio"
         file: index.qmd
+      - text: "Blog"
+        file: posts.qmd
       - text: "Cursos"
         menu:
           - text: "Fundamentos de R y Rstudio **(gratis)**"
             icon: "bi-laptop"
             href: courses/fundamentos_R.qmd
-      - text: Proyectos
-        file: projects.qmd
-      - text: TILs
-        file: posts.qmd
   site-url: https://aprendetidyverse.com
 
 
 format:
   html:
     theme: seem.scss
-    highlight-style: seem.theme
     include-after-body: plausible.html
     metadata:
-      pagetitle: "{{< meta title >}}"
-      freeze: true
-      title-block-banner: false
       toc: false
-      title-block-categories: false
-      toc-depth: 5
+
       
 metadata-files:
   - drafts.yml

@@ -1,7 +1,9 @@
 ---
-title: "Introducción al paquete `dplyr` - parte 1"
-description: "Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional."
+title: "Cómo filtrar filas en un data frame usando dplyr"
+subtitle: "La función `filter()` de permite mantener solo las filas de un que cumplen ciertas condiciones lógicas."
+description: ""
 date: 2025-05-08
 categories: ['dplyr']
 lang: "es"
+image: https://plus.unsplash.com/premium_photo-1682146840607-6cb46c57c0f4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---

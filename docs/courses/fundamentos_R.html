@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="description" content="¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse.">
 
 <title>Fundamentos de R y Rstudio – Aprende Tidyverse</title>
 <style>
@@ -27,17 +26,34 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../favicon.ico" rel="icon">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e2b2b2f11042fb8fb8b5da4c3be56cc7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0073e16014ad43f3904647f8f20f6600.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -56,18 +72,18 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Fundamentos de R y Rstudio">
 <meta property="og:description" content="¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse.">
-<meta property="og:image" content="https://aprendetidyverse.com/images/community3_og.jpg">
+<meta property="og:image" content="https://aprendetidyverse.com/img/community3_og.jpg">
 <meta property="og:site_name" content="aprendetidyverse.com">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="Fundamentos de R y Rstudio">
 <meta name="twitter:description" content="¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse.">
-<meta name="twitter:image" content="https://aprendetidyverse.com/images/community3_og.jpg">
+<meta name="twitter:image" content="https://aprendetidyverse.com/img/community3_og.jpg">
 <meta name="twitter:creator" content="@dev_aguero">
 <meta name="twitter:site" content="@dev_aguero">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -75,9 +91,10 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo.png" alt="" class="navbar-logo">
+    <img src="../img/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -85,6 +102,10 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -99,44 +120,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
-<span class="menu-text">Proyectos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../posts.html"> 
-<span class="menu-text">TILs</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="4bb13cc486522f3c343b4f900dd0b8f4" class="alert alert-light hidden"><i class="bi bi-gift quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Curso Gratis</strong> - Fundamentos de R y RStudio, inicio de clases 13 de junio <a href="">¡Matricúlate aquí!</a></p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Aprende programación en R desde cero</h1>
+<p class="subtitle lead">¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse.</p>
 </div>
 
-<div>
-  <div class="description">
-    ¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -154,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- Open Graph Tags -->
 <meta property="og:title" content="Fundamentos de R y Rstudio - Aprende programación en R desde cero">
 <meta property="og:description" content="¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse. En solo 6 semanas podrás leer datos, crear gráficos y presentar informes profesionales.">
-<meta property="og:image" content="https://aprendetidyverse.com/images/community3_og.jpg">
+<meta property="og:image" content="https://aprendetidyverse.com/img/community3_og.jpg">
 <meta property="og:url" content="https://aprendetidyverse.com/courses/fundamentos_R.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
@@ -162,15 +166,13 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Fundamentos de R y Rstudio - Aprende programación en R desde cero">
 <meta name="twitter:description" content="¡Tu viaje en ciencia de datos comienza ahora! Aprende los fundamentos de la ciencia de datos con tidyverse. En solo 6 semanas podrás leer datos, crear gráficos y presentar informes profesionales.">
-<meta name="twitter:image" content="https://aprendetidyverse.com/images/community3_og.jpg">
+<meta name="twitter:image" content="https://aprendetidyverse.com/img/community3_og.jpg">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/community3_og.jpg" class="img-fluid figure-img"></p>
+<p><img src="../img/community3_og.jpg" class="img-fluid figure-img"></p>
 <figcaption>Foto de <a href="https://unsplash.com/es/@cwmonty?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Chris Montgomery</a> en <a href="https://unsplash.com/es/fotos/macbook-pro-displaying-group-of-people-smgTvepind4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
 </figure>
 </div>
-<p>¿Te imaginas pasar de no tener conocimientos de R a poder crear tus primeros reportes con gráficos, leyendo datos desde CSV y Excel para contestar las preguntas del negocio en tan solo 6 semanas? Con práctica y la guía adecuada, puedes mejorar tus habilidades. Es momento de comenzar.</p>
-<p>Con nuestro curso no solo aprenderás los fundamentos de R, sino que también recibirás soporte personalizado para asegurarte de que comprendas cada concepto y puedas aplicarlo en situaciones reales.</p>
 <section id="lo-que-aprenderás" class="level2">
 <h2 class="anchored" data-anchor-id="lo-que-aprenderás">Lo que Aprenderás</h2>
 <details open="">
@@ -181,7 +183,7 @@ Semana 1: Descubriendo R y el Tidyverse
 En la primera semana, te sumergirás en el mundo de R y el conjunto de herramientas del Tidyverse. Aprenderás a configurar tu espacio de trabajo en RStudio, cómo leer archivos .csv y empezarás a jugar con tus datos, dándoles un primer vistazo y creando visualizaciones sencillas.
 </p>
 </details>
-<details>
+<details open="">
 <summary>
 Semana 2: Comenzamos a explorar los datos
 </summary>
@@ -189,7 +191,7 @@ Semana 2: Comenzamos a explorar los datos
 En esta semana, te adentrarás en el corazón de <code>dplyr</code> y <code>tidyr</code>, donde la magia de la manipulación de datos realmente sucede. Aprenderás a filtrar, seleccionar, y transformar tus datos para revelar las historias ocultas que tienen para contar.
 </p>
 </details>
-<details>
+<details open="">
 <summary>
 Semana 3: Inicia en la visualización de datos
 </summary>
@@ -197,7 +199,7 @@ Semana 3: Inicia en la visualización de datos
 Aquí, vas a llevar tus habilidades de visualización al siguiente nivel, usando <code>ggplot2</code> para crear tus primeros gráficos. Aprenderás sobre escalas, facetas, y cómo personalizar tus gráficos para que destaquen y se adapten a tus necesidades.
 </p>
 </details>
-<details>
+<details open="">
 <summary>
 Semana 4: Lectura y limpieza de datos
 </summary>
@@ -205,7 +207,7 @@ Semana 4: Lectura y limpieza de datos
 Esta semana te enseñará a ser capaz de leer datos almacenados en <code>CSV</code>, <code>Excel</code>, <code>SPSS</code>, entre otros. Ya sea que estés trabajando con texto, números, fechas, o cualquier otro tipo, aprenderás las habilidades para manejarlos todos con eficiencia.
 </p>
 </details>
-<details>
+<details open="">
 <summary>
 Semana 5: Fundamentos de programación
 </summary>
@@ -213,7 +215,7 @@ Semana 5: Fundamentos de programación
 Esta semana revisaremos los principios básicos de programación en R: compuertas lógicas, ciclos, condicionales, y funciones con sus parámetros. Además, abordaremos formalmente conceptos de programación funcional, pipes, variables, tipos de datos y el ciclo de ejecución del código.
 </p>
 </details>
-<details>
+<details open="">
 <summary>
 Semana 6: Creación de reportes con Quarto
 </summary>
@@ -221,86 +223,12 @@ Semana 6: Creación de reportes con Quarto
 Con <code>Quarto</code>, aprenderás a combinar tu análisis con narrativas en reportes dinámicos, haciendo que tus hallazgos no solo sean comprensibles, sino también atractivos para tu audiencia. Es la habilidad de contar una historia cautivadora, donde los datos son los personajes principales.
 </p>
 </details>
-<div class="columns">
-<p>¡No pierdas esta oportunidad! Inscribirte en nuestro curso vivir una experiencia de aprendizaje única.</p><div class="column" style="width:45%;">
-<section id="inscríbete-ahora" class="level2">
-<h2 class="anchored" data-anchor-id="inscríbete-ahora">Inscríbete Ahora</h2>
-<ul>
-<li>Próxima apertura:
-<ul>
-<li><strong>jueves 17 de abril de 2025</strong></li>
-<li>6:00 p.m. Costa Rica</li>
-</ul></li>
-<li>Duración: 6 semanas</li>
-<li>Clases en vivo</li>
-<li><strong>Precio: $99 USD</strong></li>
-</ul>
-<p><a href="https://tally.so/r/mYQb4N?curso=Fundamentos%20de%20R%20y%20RStudio&amp;precio=%2499%20USD&amp;fecha_inicio=17%20de%20abril%20de%202025&amp;id=curso_fundamentos_R&amp;precio_cr=50,000%20colones" style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Ahora</a></p>
-</section>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/prof_v4.jpg" class="img-fluid figure-img"></p>
-<figcaption>Foto de <a href="https://unsplash.com/es/@jasongoodman_youxventures?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Jason Goodman</a> en <a href="https://unsplash.com/es/fotos/five-person-by-table-watching-turned-on-white-imac-vbxyFxlgpjM?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="conoce-al-instructor" class="level2">
-<h2 class="anchored" data-anchor-id="conoce-al-instructor">Conoce al instructor</h2>
-<div class="container">
-<div class="image-container">
-<p><img src="me.png" alt="Foto de perfil" class="profile-image"></p>
-</div>
-<div class="text-container">
-<h2 class="anchored">
-👋 Hola, soy <a href="https://www.linkedin.com/in/carlos-aguero-cr" class="profile-link">Carlos Agüero</a>
-</h2>
-<p>
-Desde 2016, me dedico a enseñar a personas de todas las áreas y niveles de formación a programar en R.
-</p>
-<p>
-📚 Formo parte del listado de <a href="https://education.rstudio.com/trainers/" class="profile-link"><strong>instructores certificados por RStudio</strong></a>, enfocándome en <strong>Tidyverse</strong> y <strong>Shiny</strong>. En diciembre de 2023, tuve el gusto de unirme a los instructores de la organización <a href="https://www.software-carpentry.org" class="profile-link"><strong>The Software Carpentry</strong></a>.
-</p>
-</div>
-</div>
-<p>A lo largo de los años, he tenido el privilegio de ayudar a <strong>más de 400 estudiantes en toda América Latina</strong> a descubrir el potencial del análisis de datos con R.</p>
+<p><a href="" style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Gratis</a></p>
 </section>
 <section id="conoce-lo-que-dicen-nuestros-estudiantes" class="level2">
 <h2 class="anchored" data-anchor-id="conoce-lo-que-dicen-nuestros-estudiantes">Conoce lo que dicen nuestros estudiantes</h2>
 <script src="https://widget.senja.io/widget/fb06a6ac-2804-4eba-b249-8138840eae25/platform.js" type="text/javascript" async=""></script>
 <div class="senja-embed" data-id="fb06a6ac-2804-4eba-b249-8138840eae25" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
-<div class="columns">
-<p>No esperes más. ¡Inscríbete ahora y empieza tu camino hacia el dominio del lenguaje R! Recibe el soporte que necesitas para comenzar a escribir código desde el primer día.</p><div class="column" style="width:45%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/prof_v3.jpg" class="img-fluid figure-img"></p>
-<figcaption>Foto de <a href="https://unsplash.com/es/@arlington_research?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Arlington Research</a> en <a href="https://unsplash.com/es/fotos/man-sitting-in-front-of-table-Kz8nHVg_tGI?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<section id="inscríbete-ahora-1" class="level2">
-<h2 class="anchored" data-anchor-id="inscríbete-ahora-1">Inscríbete Ahora</h2>
-<ul>
-<li>Próxima apertura:
-<ul>
-<li><strong>jueves 17 de abril de 2025</strong></li>
-<li>6:00 p.m. Costa Rica</li>
-</ul></li>
-<li>Duración: 6 semanas</li>
-<li>Clases en vivo</li>
-<li><strong>Precio: $99 USD</strong></li>
-</ul>
-<p><a href="https://tally.so/r/mYQb4N?curso=Fundamentos%20de%20R%20y%20RStudio&amp;precio=%2499%20USD&amp;fecha_inicio=17%20de%20abril%20de%202025&amp;id=curso_fundamentos_R&amp;precio_cr=50,000%20colones" style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Ahora </a></p>
-</section>
-</div>
-</div>
-</section>
-<section id="ponte-en-contacto" class="level2">
-<h2 class="anchored" data-anchor-id="ponte-en-contacto">Ponte en contacto</h2>
-<p>La comunidad de usuarios de R me ha permitido conectar con personas interesantes de todo el mundo, algo que valoro enormemente. Si tienes una idea de proyecto, especialmente si está relacionado con datos de Costa Rica, me encantaría ayudarte en lo que sea posible.</p>
-<p>Para charlar o preguntar, escríbeme a <a href="mailto:carlos.aguero@aprendetidyverse.com">carlos.aguero@aprendetidyverse.com</a>. También puedes encontrarme en <a href="https://www.linkedin.com/in/carlos-aguero-cr">LinkedIn</a> o en <a href="https://twitter.com/dev_aguero">Twitter</a> (sí, sé que ahora se llama X, pero me resisto a cambiarle el nombre; simplemente no me gusta). ¡Espero tu mensaje!</p>
 
 
 </section>
@@ -728,7 +656,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Todo el contenido está licenciado bajo una licencia (<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC 4.0</a>).</p>
+<p>Todo el contenido está licenciado bajo (<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC 4.0</a>).</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

@@ -1,7 +1,0 @@
----
-title: "Manipular ejes en ggplot2: etiquetas, límites y escalas"
-description: "Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional."
-date: 2025-05-08
-categories: ['ggplot2']
-lang: "es"
----

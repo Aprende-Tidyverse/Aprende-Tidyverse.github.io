@@ -26,19 +26,36 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e2b2b2f11042fb8fb8b5da4c3be56cc7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0073e16014ad43f3904647f8f20f6600.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -64,9 +81,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 6,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -115,11 +131,9 @@ window.Quarto = {
 </script>
 
 <link rel="alternate" type="application/rss+xml" title="Aprende Tidyverse" href="posts.xml" data-external="1"><meta property="og:title" content="Aprende Tidyverse">
-<meta property="og:description" content="">
 <meta property="og:site_name" content="aprendetidyverse.com">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="Aprende Tidyverse">
-<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@dev_aguero">
 <meta name="twitter:site" content="@dev_aguero">
 <meta name="twitter:card" content="summary">
@@ -133,9 +147,10 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <img src="./img/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -143,6 +158,10 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./posts.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -157,23 +176,12 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Proyectos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
-<span class="menu-text">TILs</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="4bb13cc486522f3c343b4f900dd0b8f4" class="alert alert-light hidden"><i class="bi bi-gift quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Curso Gratis</strong> - Fundamentos de R y RStudio, inicio de clases 13 de junio <a href="">¡Matricúlate aquí!</a></p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
@@ -188,11 +196,6 @@ window.Quarto = {
 
 
 
-<section id="ponte-en-contacto" class="level2">
-<h2 class="anchored" data-anchor-id="ponte-en-contacto">Ponte en contacto</h2>
-<p>La comunidad de usuarios de R me ha permitido conectar con personas interesantes de todo el mundo, algo que valoro enormemente. Si tienes una idea de proyecto, especialmente si está relacionado con datos de Costa Rica, me encantaría ayudarte en lo que sea posible.</p>
-<p>Para charlar o preguntar, escríbeme a <a href="mailto:carlos.aguero@aprendetidyverse.com">carlos.aguero@aprendetidyverse.com</a>. También puedes encontrarme en <a href="https://www.linkedin.com/in/carlos-aguero-cr">LinkedIn</a> o en <a href="https://twitter.com/dev_aguero">Twitter</a> (sí, sé que ahora se llama X, pero me resisto a cambiarle el nombre; simplemente no me gusta). ¡Espero tu mensaje!</p>
-</section>
 <section id="post-recientes" class="level2">
 <h2 class="anchored" data-anchor-id="post-recientes">Post Recientes</h2>
 
@@ -208,48 +211,18 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747268628179" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external"></a></p><a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external">
-<p><img loading="lazy" src="https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="thumbnail-image"></p>
-</a><p><a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external"><code>across()</code>: aplicar funciones a múltiples columnas</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ZHBseXI='); return false;">
-dplyr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/dplyr/across-funciones-multiples-columnas.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250996918" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747331945151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external"></a></p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<p><img loading="lazy" src="https://plus.unsplash.com/premium_photo-1682146840607-6cb46c57c0f4?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="thumbnail-image"></p>
 </a><p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external">Introducción al paquete <code>dplyr</code> - parte 1</a>
+<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external">Cómo filtrar filas en un data frame usando dplyr</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external"></a>
+<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external">La función <code>filter()</code> de permite mantener solo las filas de un que cumplen ciertas condiciones lógicas.</a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ZHBseXI='); return false;">
@@ -257,7 +230,7 @@ dplyr
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
+<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-1.html" class="no-external"></a>
 </div>
 </div>
 <div class="metadata">
@@ -268,502 +241,10 @@ dplyr
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250996962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external"></a></p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external">Introducción al paquete <code>dplyr</code> - parte 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ZHBseXI='); return false;">
-dplyr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-2.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250997051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external"></a></p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external">Introducción al paquete <code>dplyr</code> - parte 3</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ZHBseXI='); return false;">
-dplyr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/dplyr/introduccion-paquete-dplyr-parte-3.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="ZHBseXI=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250997144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external"></a></p><a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external">Cómo mejorar la selección de variables en dplyr usando funciones auxiliares de selección</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ZHBseXI='); return false;">
-dplyr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/dplyr/mejorar-seleccion-dplyr-funciones-auxiliares.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251435152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external">Agregar texto a sus gráficos con ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-agregar-texto-graficos.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251553674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external">Añadir anotaciones informativas en ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-anotaciones-informativas.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251320769" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external">Cómo crear un gráfico de barras en ggplot2 paso a paso</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-grafico-barras.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251366934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external">Cómo crear gráficos de líneas en ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-lineas.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251466055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external">Manipular ejes en ggplot2: etiquetas, límites y escalas</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-manipular-escalas.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251500903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external">Personalizar colores en ggplot2: paletas y escalas de color</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-personalizar-colores.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251611915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external">Visualizar series de tiempo en ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-series-tiempo.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251520819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external"></a></p><a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external">Ajustar el aspecto de sus gráficos con temas en ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/ggplot2-temas-personalizar-aspecto.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="Z2dwbG90Mg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747251182407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external"></a></p><a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external">Introducción a ggplot2: fundamentos y primer gráfico</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ggplot2/introduccion-ggplot2-fundamentos.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="cmVnZXglMkNzdHJpbmdy" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250910427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external"></a></p><a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external">Grupos, retroreferencias y lookaround en regex con R</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cmVnZXg='); return false;">
-regex
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyaW5ncg=='); return false;">
-stringr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/stringr/grupos-retroreferencias-lookaround-r-3.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="cmVnZXglMkNzdHJpbmdy" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250939573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external"></a></p><a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external">Introducción a las expresiones regulares en R</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cmVnZXg='); return false;">
-regex
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyaW5ncg=='); return false;">
-stringr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/stringr/introduccion-expresiones-regulares-r-1.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-categories="c3RyaW5ncg==" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250934893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external"></a></p><a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external">Cómo manipular textos en R con <code>stringr</code></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyaW5ncg=='); return false;">
-stringr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/stringr/manipulacion-textos-stringr.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-categories="cmVnZXglMkNzdHJpbmdy" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1747250942582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external"></a></p><a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external">Metacaracteres y cuantificadores en regex con R</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cmVnZXg='); return false;">
-regex
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyaW5ncg=='); return false;">
-stringr
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external">Explora los recientes cambios territoriales y de nombres en los cantones de Costa Rica a través de esta guía que te enseñará a crear mapas actualizados con ggplot2, utilizando los datos del Instituto Geográfico Nacional.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/stringr/metacaracteres-cuantificadores-regex-r-2.html" class="no-external">
-<div class="listing-date">
-2025-05-08
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No hay resultados
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div></main> <!-- /main -->
 <script defer="" data-domain="aprendetidyverse.com" src="https://rstudio-plausible.n5hlxm.easypanel.host/js/script.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1187,7 +668,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Todo el contenido está licenciado bajo una licencia (<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC 4.0</a>).</p>
+<p>Todo el contenido está licenciado bajo (<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC 4.0</a>).</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
