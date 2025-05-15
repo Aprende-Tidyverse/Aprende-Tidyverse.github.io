@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hola, soy Carlos Agüero B.",
+    "title": "\nHola, soy Carlos Agüero B.\n",
     "section": "",
-    "text": "Hola, soy Carlos Agüero B.\nIngeniero en Sistemas con 10 años de experiencia programando en R y formando a personas en este campo. Como instructor certificado por RStudio para enseñar Tidyverse y Shiny y por Software Carpentries para el diseño de cursos y enseñanza de la programación, he colaborado en la formación de equipos de ciencia de datos en universidades, sector público y empresas privadas en toda América Latina.\nEste proyecto busca ofrecerle contenido gratuito en español para acompañarle en su aprendizaje de R y, especialmente, de tidyverse. Espero que encuentre aquí los recursos que necesita.\nSi tiene algún tema específico que quiera que explique, puede sugerirlo en este enlace. Estoy para ayudarle en su proceso de aprendizaje.\n\n\n\n\n\n\nInicie en el mundo de R desde cero en este curso de 6 semanas totalmente gratis, clases en vivo (Zoom) y sesiones de práctica.\n\n\n🎁 Curso Introductorio\n\n\n\n\n\n\n\n\nSi desea avanzar en su aprendizaje, puede tomar cursos a un precio accesible con clases en vivo y tutorías individuales.\n\n\nCursos Avanzados\n\n\n\n\n\n\n\n\nUna forma de aprender a su ritmo es con nuestra serie de tutoriales, ejemplos concretos de cómo resolver problemas comunes.\n\n\nTutoriales\n\n\n\n\n\n\n\n\nEste es un experimento, pero nuestro objetivo es grabar ejemplos en video para todas las funciones de los paquetes del tidyverse, explicando su uso y cómo se relacionan entre ellas.\n\n\nDocumentación explicada\n\n\n\n\n\n\n\n\nSi necesita ayuda con un proyecto en específico, programemos una reunión y resolvámoslo juntos.\n\n\nTutorias Privadas\n\n\n\n\n\n\n\n\nSi tiene alguna propuesta de proyecto o necesita cotizar un curso en particular, puede contactarme a través de este enlace.\n\n\nContacto (WhatsApp)"
+    "text": "Hola, soy Carlos Agüero B.\n\nSoy Ingeniero de Software. Desde 2015 me dedico a programar en R y a capacitar personas en este campo. Como instructor certificado por RStudio para enseñar Tidyverse y Shiny y por Software Carpentries para la enseñanza de la programación, he colaborado en la formación de equipos de ciencia de datos en universidades, sector público y empresas privadas en toda América Latina.\nEste proyecto busca ofrecerle contenido gratuito en español para acompañarle en su aprendizaje de R y, especialmente, de tidyverse. Espero que encuentre aquí los recursos que necesita.\nSi tiene algún tema específico que quiera que explique, puede sugerirlo en este enlace. Estoy para ayudarle en su proceso de aprendizaje.\n\n\n\n\n\n\nInicie en el mundo de R desde cero en este curso de 6 semanas totalmente gratis, clases en vivo (Zoom) y sesiones de práctica.\n\n\n🎁 Curso Introductorio\n\n\n\n\n\n\n\n\nSi desea avanzar en su aprendizaje, puede tomar cursos a un precio accesible con clases en vivo y tutorías individuales.\n\n\nCursos Avanzados\n\n\n\n\n\n\n\n\nUna forma de aprender a su ritmo es con nuestra serie de tutoriales, ejemplos concretos de cómo resolver problemas comunes.\n\n\nTutoriales\n\n\n\n\n\n\n\n\nEste es un experimento, pero nuestro objetivo es grabar ejemplos en video para todas las funciones de los paquetes del tidyverse, explicando su uso y cómo se relacionan entre ellas.\n\n\nDocumentación explicada\n\n\n\n\n\n\n\n\nSi necesita ayuda con un proyecto en específico, programemos una reunión y resolvámoslo juntos.\n\n\nTutorias Privadas\n\n\n\n\n\n\n\n\nSi tiene alguna propuesta de proyecto o necesita cotizar un curso en particular, puede contactarme a través de este enlace.\n\n\nContacto (WhatsApp)"
   },
   {
     "objectID": "courses/manipulacion_datos_R.html",
@@ -54,13 +54,6 @@
     "title": "Limpieza y manipulación de datos con R",
     "section": "Ponte en contacto",
     "text": "Ponte en contacto\nLa comunidad de usuarios de R me ha permitido conectar con personas interesantes de todo el mundo, algo que valoro enormemente. Si tienes una idea de proyecto, especialmente si está relacionado con datos de Costa Rica, me encantaría ayudarte en lo que sea posible.\nPara charlar o preguntar, escríbeme a carlos.aguero@aprendetidyverse.com. También puedes encontrarme en LinkedIn o en Twitter (sí, sé que ahora se llama X, pero me resisto a cambiarle el nombre; simplemente no me gusta). ¡Espero tu mensaje!"
-  },
-  {
-    "objectID": "courses/fundamentos_R.html",
-    "href": "courses/fundamentos_R.html",
-    "title": "Aprende programación en R desde cero",
-    "section": "",
-    "text": "¿Te imaginas pasar de no tener conocimientos de R a poder crear tus primeros reportes con gráficos, leyendo datos desde CSV y Excel para contestar las preguntas del negocio en tan solo 6 semanas? Con práctica y la guía adecuada, puedes mejorar tus habilidades. Es momento de comenzar.\nCon nuestro curso no solo aprenderás los fundamentos de R, sino que también recibirás soporte personalizado para asegurarte de que comprendas cada concepto y puedas aplicarlo en situaciones reales."
   },
   {
     "objectID": "courses/fundamentos_R.html#lo-que-aprenderás",
@@ -117,6 +110,13 @@
     "title": "Visualización de datos con R",
     "section": "Ponte en contacto",
     "text": "Ponte en contacto\nLa comunidad de usuarios de R me ha permitido conectar con personas interesantes de todo el mundo, algo que valoro enormemente. Si tienes una idea de proyecto, especialmente si está relacionado con datos de Costa Rica, me encantaría ayudarte en lo que sea posible.\nPara charlar o preguntar, escríbeme a carlos.aguero@aprendetidyverse.com. También puedes encontrarme en LinkedIn o en Twitter (sí, sé que ahora se llama X, pero me resisto a cambiarle el nombre; simplemente no me gusta). ¡Espero tu mensaje!"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Aprende Tidyverse",
+    "section": "",
+    "text": "Cómo filtrar filas en un data frame usando dplyr\n\n\nLa función filter() de permite mantener solo las filas de un que cumplen ciertas condiciones lógicas.\n\n\n\ndplyr\n\n\n\n\n\n\n\n\n\n2025-05-08\n\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "projects.html",

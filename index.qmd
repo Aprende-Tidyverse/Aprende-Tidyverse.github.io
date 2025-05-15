@@ -5,11 +5,11 @@ toc: false
 page-layout: full
 ---
 
-# Hola, soy Carlos Agüero B.
+<h1>Hola, soy <span class="nombre-resaltado">Carlos Agüero B.</span></h1>
 
-Ingeniero en Sistemas con 10 años de experiencia programando en R y formando a personas en este campo. Como instructor certificado por RStudio para enseñar Tidyverse y Shiny y por Software Carpentries para el diseño de cursos y enseñanza de la programación, he colaborado en la formación de equipos de ciencia de datos en universidades, sector público y empresas privadas en toda América Latina.
+Soy Ingeniero de Software. Desde 2015 me dedico a programar en R y a capacitar personas en este campo. Como [instructor certificado por RStudio](https://education.rstudio.com/trainers) para enseñar Tidyverse y Shiny y por [Software Carpentries](https://carpentries.org/community/instructors/) para la enseñanza de la programación, he colaborado en la formación de equipos de ciencia de datos en universidades, sector público y empresas privadas en toda América Latina.
 
-Este proyecto busca ofrecerle contenido gratuito en español para acompañarle en su aprendizaje de R y, especialmente, de tidyverse.
+Este proyecto busca ofrecerle contenido gratuito en español para acompañarle en su aprendizaje de R y, especialmente, de [tidyverse](https://www.tidyverse.org/).
 Espero que encuentre aquí los recursos que necesita.
 
 **Si tiene algún tema específico que quiera que explique**, puede sugerirlo en este [enlace](). Estoy para ayudarle en su proceso de aprendizaje.

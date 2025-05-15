@@ -30,7 +30,7 @@ website:
   title: "Aprende Tidyverse"
   favicon: favicon.ico
   navbar:
-    fixed: true
+    fixed:
     logo: img/logo.png
     logo-alt: ""
     title: false

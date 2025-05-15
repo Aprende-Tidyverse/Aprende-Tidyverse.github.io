@@ -1,36 +1,97 @@
+/*-- scss:defaults --*/
+$font-size-root: 130% !default;
+$card-first:  #626F47 !default;   // azul oscuro
+$card-second: #27548A !default;   // turquesa
+$card-third:  #7C4585 !default;   // fucsia
+$highlight: #27548A !default;   // naranja cálido y amigable
+
+/* Grosor del borde */
+$card-border-width: 4px !default;
+
+
+// Altura de la navbar (ajústala si cambias la altura en CSS)
+$navbar-height: 70px !default;
 
 /*-- scss:rules --*/
 
+/* Asegura que el contenido no quede oculto tras la barra fija */
+body {
+  margin-top: 15px;
+}
+
+main {
+  margin-top:2.2rem;
+  margin-bottom:1em
+}
+
+/* Barra de navegación fija y con sombra ligera */
 .navbar {
-  background-color: #fff !important;
-  position: sticky !important;
+  background-color: #fff !important;              // fondo blanco
+  position: fixed !important;                     // fija al viewport
   top: 0;
-  z-index: 9999;
+  left: 0;
+  width: 100%;                                    // ocupa todo el ancho
+  height: $navbar-height;                         // altura definida arriba
+  z-index: 9999;                                  // por encima de todo
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);       // sombra sutil en la base
 }
 
+/* Logo dentro de la navbar */
 .navbar-logo {
-  max-height: 50px;
+  max-height: 50px;      // limitar altura del logo
   width: auto;
-  padding-right: 0.5rem;
-  margin-right: 0.5rem;
+  padding-right: 0.5rem; // separación interna derecha
+  margin-right: 0.5rem;  // separación externa derecha
 }
 
+/* Nombre de marca o título */
 .navbar-brand {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.1rem;     // tamaño de texto
+  font-weight: 700;      // negrita
 }
 
+/* Enlaces de navegación */
 .navbar-nav .nav-link {
-  font-family: 'Poppins', sans-serif;
-  color: #000 !important;
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;  // tipografía
+  color: #000 !important;              // color negro
+  font-size: 1.1rem;                   // tamaño de texto
 }
 
+/* Hover sobre enlace */
 .navbar-nav .nav-link:hover {
-  color: #074173;
+  color: #074173;       // color al pasar el ratón
 }
 
+/* Enlace activo o seleccionado */
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: #074173 !important;
+  color: #074173 !important;  // mismo color que hover
+}
+
+/* Mixin para evitar repetir código */
+@mixin solid-card($base-color) {
+  border: $card-border-width solid $base-color;    // borde grueso y sólido
+  border-radius: 0;                                // corte recto
+  background-color: rgba(red($base-color),
+                         green($base-color),
+                         blue($base-color), 0.10); // interior con alpha 0.1
+}
+
+/* Aplica a cada tipo de tarjeta por ID */
+#card-first-color  { @include solid-card($card-first);  }
+#card-second-color { @include solid-card($card-second); }
+#card-third-color  { @include solid-card($card-third);  }
+
+/* Opcional: ajusta también los enlaces dentro de cada tarjeta
+   para que combinen con el color base */
+#card-first-color  .card-link { color: $card-first;  }
+#card-second-color .card-link { color: $card-second; }
+#card-third-color  .card-link { color: $card-third;  }
+
+/* Hover opcional para enlaces */
+.card-link:hover { text-decoration: underline; }
+
+.nombre-resaltado {
+  color: $highlight;     // aplica el color llamativo
+  font-weight: 700;      // un poco más grueso
 }
