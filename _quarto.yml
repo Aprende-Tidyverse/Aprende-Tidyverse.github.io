@@ -38,7 +38,7 @@ website:
     logo-alt: ""
     title: false
     background: dark
-    left:
+    right:
       - text: "Blog"
         file: index.qmd
       - text: "Cursos"
