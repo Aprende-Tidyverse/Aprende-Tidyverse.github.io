@@ -1,5 +1,5 @@
 /*-- scss:defaults --*/
-$font-size-root: 130% !default;
+$font-size-root: 120% !default;
 $card-first:  #626F47 !default;   // azul oscuro
 $card-second: #27548A !default;   // turquesa
 $card-third:  #7C4585 !default;   // fucsia
@@ -15,30 +15,17 @@ $navbar-height: 70px !default;
 /*-- scss:rules --*/
 
 /* Asegura que el contenido no quede oculto tras la barra fija */
-body {
-  margin-top: 15px;
-}
-
-main {
-  margin-top:2.2rem;
-  margin-bottom:1em
-}
 
 /* Barra de navegación fija y con sombra ligera */
 .navbar {
-  background-color: #fff !important;              // fondo blanco
-  position: fixed !important;                     // fija al viewport
-  top: 0;
-  left: 0;
-  width: 100%;                                    // ocupa todo el ancho
-  height: $navbar-height;                         // altura definida arriba
-  z-index: 9999;                                  // por encima de todo
+  background-color: #fff !important;              // fondo blanco               // fija al viewport
+  width: 100%;                                    // ocupa todo el ancho                    // altura definida arriba                        // por encima de todo
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);       // sombra sutil en la base
 }
 
 /* Logo dentro de la navbar */
 .navbar-logo {
-  max-height: 50px;      // limitar altura del logo
+  max-height: 60px;      // limitar altura del logo
   width: auto;
   padding-right: 0.5rem; // separación interna derecha
   margin-right: 0.5rem;  // separación externa derecha
@@ -52,7 +39,6 @@ main {
 
 /* Enlaces de navegación */
 .navbar-nav .nav-link {
-  font-family: 'Poppins', sans-serif;  // tipografía
   color: #000 !important;              // color negro
   font-size: 1.1rem;                   // tamaño de texto
 }
