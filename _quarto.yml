@@ -7,10 +7,11 @@ project:
     port: 4200
 
 website:
+  search: false
   announcement: 
     content: "**Curso Gratis** - Fundamentos de R y RStudio, inicio de clases 13 de junio [¡Matricúlate aquí!]()" 
     position: below-navbar
-    type: info
+    type: warning
     icon: gift
   page-footer:
     left: |
@@ -37,8 +38,8 @@ website:
     logo: images/logo.png
     logo-alt: ""
     title: false
-    background: dark
-    right:
+    background: white
+    left:
       - text: "Blog"
         file: index.qmd
       - text: "Cursos"
@@ -50,8 +51,9 @@ website:
         file: projects.qmd
       - text: TILs
         file: posts.qmd
-
-
+    right: 
+      - icon: rss
+        href: https://aprendetidyverse.com/index.xml
   site-url: https://aprendetidyverse.com
 
 
