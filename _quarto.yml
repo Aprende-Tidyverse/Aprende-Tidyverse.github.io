@@ -38,7 +38,7 @@ website:
     right:
       - text: "Inicio"
         file: index.qmd
-      - text: "Docs"
+      - text: "Tutoriales"
         file: packages/index.qmd
       - text: "Cursos"
         file: courses/index.qmd
