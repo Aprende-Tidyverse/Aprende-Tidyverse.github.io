@@ -59,10 +59,10 @@ pagetitle: "Fundamentos de R y Rstudio"
 
 ## Proxima apartura 
 
-+ Jueves 13 de junio 2025
++ Jueves 12 de junio 2025
 + 6:00 p.m. (Costa Rica)
 + Duración: 6 semanas
-+ Clases en vivo
++ Clases en vivo (zoom)
 
 <a href='' style="background-color: #FF5F00; color: white; padding: 10px 20px; border: none; border-radius: 0px; text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer; transition: background-color 0.3s ease;">Inscribirse Gratis</a>
 
