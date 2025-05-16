@@ -43,7 +43,7 @@ Espero que encuentre aquí los recursos que necesita.
 ::: {.g-col-12 .g-col-md-12}
 <div class="card h-100" id="card-first-color">
 <div class="card-body d-flex flex-column">
-<h3>Tutoriales</h3>
+<h3>Documentación explicada</h3>
 <p class="card-text">Este es un experimento, pero nuestro objetivo es grabar ejemplos en video para todas las funciones de los paquetes del tidyverse, explicando su uso y cómo se relacionan entre ellas.</p>
 <div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ir a la documentación</a></div>
 </div>
