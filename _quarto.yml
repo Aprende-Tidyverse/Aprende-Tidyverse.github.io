@@ -38,8 +38,8 @@ website:
     right:
       - text: "Inicio"
         file: index.qmd
-      - text: "Blog"
-        file: posts.qmd
+      - text: "Docs"
+        file: packages/index.qmd
       - text: "Cursos"
         file: courses/index.qmd
   site-url: https://aprendetidyverse.com

@@ -1,9 +1,9 @@
 /*-- scss:defaults --*/
 $font-size-root: 120% !default;
-$card-first:  #27548A !default;   // azul oscuro
-$card-second: #27548A !default;   // turquesa
-$card-third:  #7C4585 !default;   // fucsia
-$highlight: #7C4585 !default;   // naranja cálido y amigable
+$card-first:  #3E5879 !default;   // azul oscuro
+$card-second: #3E5879 !default;   // turquesa
+$card-third:  #A0C878 !default;   // fucsia
+$highlight: #3E5879 !default;   // naranja cálido y amigable
 
 /* Grosor del borde */
 $card-border-width: 4px !default;
@@ -39,8 +39,8 @@ $navbar-height: 70px !default;
 
 /* Enlaces de navegación */
 .navbar-nav .nav-link {
-  color: #000 !important;              // color negro
-  font-size: 1.1rem;                   // tamaño de texto
+  color: #3C3D37 !important;              // color negro
+  font-size: 1.1rem;
 }
 
 /* Hover sobre enlace */
@@ -80,4 +80,16 @@ $navbar-height: 70px !default;
 .nombre-resaltado {
   color: $highlight;     // aplica el color llamativo
   font-weight: 700;      // un poco más grueso
+}
+
+a {
+  color: $highlight;
+}
+
+p{
+  color: #3C3D37;
+}
+
+h1{
+  color: #3C3D37;
 }

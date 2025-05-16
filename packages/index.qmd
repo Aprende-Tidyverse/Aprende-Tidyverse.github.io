@@ -1,0 +1,107 @@
+---
+pagetitle: Aprende Tidyverse
+lang: "es"
+toc: false
+page-layout: full
+---
+
+<h1><span class="nombre-resaltado">Documentación Explicada</span></h1>
+
+Este es un experimento, pero nuestro objetivo es grabar ejemplos en video para todas las funciones de los paquetes del tidyverse, explicando su uso y cómo se relacionan entre ellas.
+
+<br>
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>ggplot2</h3>
+<p class="card-text">Crea visualizaciones profesionales con la gramática de gráficos personaliza capas, escalas y temas fácilmente.</p>
+<div style="margin-top: auto;"><a href="courses/fundamentos_R.qmd" class="card-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-second-color">
+<div class="card-body d-flex flex-column">
+<h3>dplyr</h3>
+<p class="card-text">Transforma y resume tablas con verbos expresivos: filter, select, mutate, summarise y joins eficientes.</p>
+<div style="margin-top: auto;"><a href="posts.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-second-color">
+<div class="card-body d-flex flex-column">
+<h3>tidyr</h3>
+<p class="card-text">Convierte datos desordenados en formato limpio (tidy).</p>
+<div style="margin-top: auto;"><a href="posts.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-second-color">
+<div class="card-body d-flex flex-column">
+<h3>readr</h3>
+<p class="card-text">Importa archivos CSV rápidamente con detección automática de tipos.</p>
+<div style="margin-top: auto;"><a href="talks.qmd" class="card-link third-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>purrr</h3>
+<p class="card-text">Aplica funciones sobre listas y data frames con map, reduce, safely y walk, evitando bucles explícitos.</p>
+<div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>tibble</h3>
+<p class="card-text">Tablas modernas: impresión amigable, tipos preservados y subsetting seguro integrado al tidyverse.</p>
+<div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>stringr</h3>
+<p class="card-text">Manipula texto: busca, extrae, reemplaza y formatea con expresiones regulares (regex).</p>
+<div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>forcats</h3>
+<p class="card-text">Simplifica factores: reordena, combina, recodifica y analiza niveles de forma intuitiva.</p>
+<div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<h3>lubridate</h3>
+<p class="card-text">Gestiona fechas y horas: parsea, extrae componentes, realiza aritmética y maneja zonas horarias.</p>
+<div style="margin-top: auto;"><a href="packages.qmd" class="card-link second-color-link heading-font">Ver el temario</a></div>
+</div>
+</div>
+:::
+
+:::
+
