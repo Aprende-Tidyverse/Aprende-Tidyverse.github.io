@@ -93,3 +93,15 @@ p{
 h1{
   color: #3C3D37;
 }
+
+.gg-list{list-style:none;padding:0;margin:0;text-align:left;}
+.gg-list li{display:inline-block;margin:0 0.5em;}
+.gg-list a{pointer-events:none;color:#999;text-decoration:none;}
+.gg-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.gg-list a.disabled{pointer-events:none;color:#ccc;text-decoration:none;}
+
+.dplyr-list{list-style:none;padding:0;margin:0;text-align:left;}
+.dplyr-list li{display:inline-block;margin:0 .5em;}
+.dplyr-list a{pointer-events:none;color:#999;text-decoration:none;}
+.dplyr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.dplyr-list a.disabled{pointer-events:none;color:#ccc;}
