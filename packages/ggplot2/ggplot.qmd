@@ -1,0 +1,10 @@
+---
+pagetitle: Tidyverse - ggplot
+lang: "es"
+toc: false
+page-layout: full
+---
+
+<h1><span class="nombre-resaltado">ggplot - Intro gramática de los gráficos</span></h1>
+
+Este es un experimento, pero nuestro objetivo es grabar ejemplos en video para todas las funciones de los paquetes del tidyverse, explicando su uso y cómo se relacionan entre ellas.
