@@ -12866,5 +12866,44 @@ h1{
 .dplyr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
 .dplyr-list a.disabled{pointer-events:none;color:#ccc;}
 
+.tidyr-list{list-style:none;padding:0;margin:0;text-align:left;}
+.tidyr-list li{display:inline-block;margin:0 .5em;}
+.tidyr-list a{pointer-events:none;color:#999;text-decoration:none;}
+.tidyr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.tidyr-list a.disabled{pointer-events:none;color:#ccc;}
+
+
+.readr-list{list-style:none;padding:0;margin:0;text-align:left;}
+.readr-list li{display:inline-block;margin:0 .5em;}
+.readr-list a{pointer-events:none;color:#999;text-decoration:none;}
+.readr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.readr-list a.disabled{pointer-events:none;color:#ccc;}
+
+.purrr-list{list-style:none;padding:0;margin:0;text-align:left;}
+.purrr-list li{display:inline-block;margin:0 .5em;}
+.purrr-list a{pointer-events:none;color:#999;text-decoration:none;}
+.purrr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.purrr-list a.disabled{pointer-events:none;color:#ccc;}
+
+
+.stringr-list{list-style:none;padding:0;margin:0;text-align:left;}
+.stringr-list li{display:inline-block;margin:0 .5em;}
+.stringr-list a{pointer-events:none;color:#999;text-decoration:none;}
+.stringr-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.stringr-list a.disabled{pointer-events:none;color:#ccc;}
+
+.forcats-list{list-style:none;padding:0;margin:0;text-align:left;}
+.forcats-list li{display:inline-block;margin:0 .5em;}
+.forcats-list a{pointer-events:none;color:#999;text-decoration:none;}
+.forcats-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.forcats-list a.disabled{pointer-events:none;color:#ccc;}
+
+.lubridate-list{list-style:none;padding:0;margin:0;text-align:left;}
+.lubridate-list li{display:inline-block;margin:0 .5em;}
+.lubridate-list a{pointer-events:none;color:#999;text-decoration:none;}
+.lubridate-list a.enabled{pointer-events:auto;color:#007bff;text-decoration:underline;}
+.lubridate-list a.disabled{pointer-events:none;color:#ccc;}
+
+
 
 // quarto-scss-analysis-annotation { "origin": null }
